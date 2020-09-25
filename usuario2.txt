@@ -33,3 +33,15 @@ Como esta no codigo
 
 
 </IfModule>
+
+
+
+#!/bin/sh
+
+mysql -u root -proot12345678 -h 10.0.7.55
+
+USE Demo_DB;
+
+CREATE TABLE IF NOT EXISTS `usuario` (id INT NOT NULL AUTO_INCREMENT, usuario VARCHAR(20) NOT NULL, senha VARCHAR(70), PRIMARY KEY (id));
+
+INSERT INTO usuario (usuario, senha) VALUES ('user1', '0a041b9462caa4a31bac3567e0b6e6fd9100787db2ab433d96f6d178cabfce90');
