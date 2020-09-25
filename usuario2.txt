@@ -1,0 +1,35 @@
+CREATE TABLE `usuario` (
+id INT NOT NULL AUTO_INCREMENT,
+ `usuario` varchar(20) NOT NULL,
+ `senha` varchar(70) NOT NULL
+, PRIMARY KEY (id));
+
+
+
+0a041b9462caa4a31bac3567e0b6e6fd9100787db2ab433d96f6d178cabfce90
+
+Header set Access-Control-Allow-Origin "*"
+
+
+### following three lines are for CORS support
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+
+Como esta no codigo 
+
+<IfModule mod_dir.c>
+
+          DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+
+          ### following three lines are for CORS support
+
+          Header add Access-Control-Allow-Origin "*"
+
+         Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+
+         Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+
+</IfModule>
